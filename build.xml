@@ -4,7 +4,7 @@
     <property name="target" location="./test" />
     <property name="build" location="bin" />
 
-    <target namem="main" depends="init, compile, compress">
+    <target name="main" depends="init, compile, compress">
         <echo>
         Building the .jar file is ok .
         </echo>
