@@ -7,6 +7,9 @@ public class Animal {
             output="tweet";
         }else if(args[0].equals("cat")){
             output="Meow"; 
+        }else{
+            System.out.println(output);
+
         }
 
         System.out.println(output);
