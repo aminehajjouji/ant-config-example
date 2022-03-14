@@ -18,5 +18,8 @@
     </target>
       <target name="compress" depends ="compile">
         <javac destfile="${build}/Project.jar" basedir="${target}" includes="*.class"/>
+         <manifest>
+            <attribute name="Main-Class" value="Project"/>
+         </manifest>
     </target>
 </project>
