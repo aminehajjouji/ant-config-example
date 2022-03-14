@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="main">
-    <property name="src" location="." />
+    <property name="src" location="src" />
     <property name="target" location="./test" />
     <property name="build" location="bin" />
 
@@ -17,9 +17,10 @@
         <javac srcdir="." destdir="${target}"/>
     </target>
       <target name="compress" depends ="compile">
-        <javac destfile="${build}/Project.jar" basedir="${target}" includes="*.class"/>
+        <jar destfile="${build}/Animal.jar" basedir="${target}" includes="*.class">
          <manifest>
-            <attribute name="Main-Class" value="Project"/>
+            <attribute name="Main-Class" value="Animal"/>
          </manifest>
+        </jar>
     </target>
 </project>
